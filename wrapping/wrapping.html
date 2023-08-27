@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+
+    <title>CCall and CWrap</title>
+    <script src="wrapping.js"></script>
+    <script src="func.js"></script>
+    <link href="wrapping.css" rel="stylesheet">
+
+</head>
+<body>
+<h1>Calculator</h1>
+<div>
+    <label for="a">NUMBER</label><input type="number" id="a" value="33">
+</div>
+<div>
+    <label for="b">NUMBER</label><input type="number" id="b" value="11">
+</div>
+<div>
+    <button onclick="addNum()">ADD</button>
+    <button onclick="subNum()">SUB</button>
+    <button onclick="mulNum()">MUL</button>
+    <button onclick="divNum()">DIV</button>
+</div>
+<div id="result">
+    <label for="c">result: </label><output id="c"></output>
+</div>
+</body>
+</html>
