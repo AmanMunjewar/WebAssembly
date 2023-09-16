@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Learning the Emscripten compilation.">
+      <change afterPath="$PROJECT_DIR$/EMCC_ENV/out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EMCC_ENV/out.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EMCC_ENV/out.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrapping/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMCC_ENV/fact.c" beforeDir="false" afterPath="$PROJECT_DIR$/EMCC_ENV/fact.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AmanMunjewar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9fde90d8-8426-4dd7-8d8a-34e00d8b4fa4" />
+        <option name="url" value="https://github.com/AmanMunjewar/WebAssembly.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2UYX41QVyp7y5fBfxX3X3duwIDF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/web/WebAssembly",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\WebAssembly\hello" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="" />
+      <created>1693117292545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693117292545</updated>
+      <workItem from="1693117293562" duration="939000" />
+      <workItem from="1693118297731" duration="4083000" />
+      <workItem from="1693128683681" duration="6258000" />
+      <workItem from="1693138446319" duration="235000" />
+      <workItem from="1693138692172" duration="1775000" />
+      <workItem from="1693157854836" duration="146000" />
+      <workItem from="1693225243734" duration="1155000" />
+      <workItem from="1693301248439" duration="111000" />
+      <workItem from="1693304251507" duration="349000" />
+      <workItem from="1693316183162" duration="45000" />
+      <workItem from="1694622968661" duration="10000" />
+      <workItem from="1694856513237" duration="1310000" />
+      <workItem from="1694858787285" duration="434000" />
+      <workItem from="1694859252041" duration="1101000" />
+      <workItem from="1694861610293" duration="23000" />
+      <workItem from="1694862368478" duration="700000" />
+      <workItem from="1694863087356" duration="299000" />
+      <workItem from="1694863397626" duration="43000" />
+      <workItem from="1694863449277" duration="2700000" />
+    </task>
+    <task id="LOCAL-00001" summary="Learning the Emscripten compilation.">
+      <option name="closed" value="true" />
+      <created>1694859219505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694859219505</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Learning the Emscripten compilation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learning the Emscripten compilation." />
+  </component>
+</project>
