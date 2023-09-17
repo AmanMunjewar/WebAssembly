@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Learning the Emscripten compilation.">
-      <change afterPath="$PROJECT_DIR$/EMCC_ENV/out.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMCC_ENV/out.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EMCC_ENV/out.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrapping/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMCC_ENV/fact.c" beforeDir="false" afterPath="$PROJECT_DIR$/EMCC_ENV/fact.c" afterDir="false" />
+    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Implemented CCALL and CWRAP.">
+      <change afterPath="$PROJECT_DIR$/streaming/streaming.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streaming/streaming.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streaming/streaming.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streaming/streaming.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streaming/streaming_util.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -30,9 +31,17 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;AmanMunjewar&quot;,
+      &quot;author&quot;: &quot;AmanMunjewar&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;AmanMunjewar&quot;
+    &quot;assignee&quot;: &quot;AmanMunjewar&quot;,
+    &quot;author&quot;: &quot;AmanMunjewar&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
@@ -54,29 +63,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/web/WebAssembly",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web/WebAssembly&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\web\WebAssembly\hello" />
@@ -108,7 +117,10 @@
       <workItem from="1694862368478" duration="700000" />
       <workItem from="1694863087356" duration="299000" />
       <workItem from="1694863397626" duration="43000" />
-      <workItem from="1694863449277" duration="2700000" />
+      <workItem from="1694863449277" duration="3697000" />
+      <workItem from="1694876188218" duration="447000" />
+      <workItem from="1694882454237" duration="2756000" />
+      <workItem from="1694939803018" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="Learning the Emscripten compilation.">
       <option name="closed" value="true" />
@@ -118,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694859219505</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implemented CCALL and CWRAP.">
+      <option name="closed" value="true" />
+      <created>1694866414720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694866414720</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implemented CCALL and CWRAP.">
+      <option name="closed" value="true" />
+      <created>1694866516511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694866516511</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Learning the Emscripten compilation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning the Emscripten compilation." />
+    <MESSAGE value="Implemented CCALL and CWRAP." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented CCALL and CWRAP." />
   </component>
 </project>

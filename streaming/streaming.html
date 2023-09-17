@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Streaming</title>
+</head>
+<body bgcolor="black" text="#f0f8ff">
+	<h1>Streaming</h1>
+	<script>
+		let exports;
+		WebAssembly.instantiateStreaming(
+				fetch("streaming.wasm"), {}
+		).then(results => exports = results.instance.exports)
+		
+		function run_wasm(){
+			const a = document.querySelector("#a").value;
+			const sum = exports.sumOf(a);
+			
+			document.querySelector("#ret")
+					.innerHTML += `${a} => ${sum}<br/>`
+		}
+	</script>
+	<label for="a">NUMBER</label><input type="number" id="a">
+	<div>
+		<button onclick="run_wasm()">Trigger</button>
+	</div>
+	<p id="ret"></p>
+</body>
+</html>
