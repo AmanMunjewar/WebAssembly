@@ -380,7 +380,7 @@ function _free() {
   abort("free() called but not included in the build - add '_free' to EXPORTED_FUNCTIONS");
 }
 
-// Memory management
+// memory management
 
 var HEAP,
 /** @type {!Int8Array} */

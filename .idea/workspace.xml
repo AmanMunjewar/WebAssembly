@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Implemented CCALL and CWRAP.">
-      <change afterPath="$PROJECT_DIR$/streaming/streaming.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streaming/streaming.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streaming/streaming.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streaming/streaming.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/streaming/streaming_util.c" afterDir="false" />
+    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Learning the concept of streaming.">
+      <change afterPath="$PROJECT_DIR$/memory/memory.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/memory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/memory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/memory.wasm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EMCC_ENV/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/EMCC_ENV/out.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/a.out.js" beforeDir="false" afterPath="$PROJECT_DIR$/hello/a.out.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrapping/wrapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/wrapping/wrapping.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -121,6 +123,8 @@
       <workItem from="1694876188218" duration="447000" />
       <workItem from="1694882454237" duration="2756000" />
       <workItem from="1694939803018" duration="1256000" />
+      <workItem from="1694945693749" duration="2335000" />
+      <workItem from="1694958074093" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="Learning the Emscripten compilation.">
       <option name="closed" value="true" />
@@ -146,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694866516511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Learning the concept of streaming.">
+      <option name="closed" value="true" />
+      <created>1694945930210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694945930210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +179,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Learning the Emscripten compilation." />
     <MESSAGE value="Implemented CCALL and CWRAP." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented CCALL and CWRAP." />
+    <MESSAGE value="Learning the concept of streaming." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learning the concept of streaming." />
   </component>
 </project>
