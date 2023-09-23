@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Learning the concept of streaming.">
-      <change afterPath="$PROJECT_DIR$/memory/memory.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/memory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/memory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/memory.wasm" afterDir="false" />
+    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Memory allocation and handling.">
+      <change afterPath="$PROJECT_DIR$/comparison/JS/JS_comp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malloc/malloc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malloc/malloc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malloc/malloc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malloc/malloc.wasm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EMCC_ENV/out.js" beforeDir="false" afterPath="$PROJECT_DIR$/EMCC_ENV/out.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/a.out.js" beforeDir="false" afterPath="$PROJECT_DIR$/hello/a.out.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrapping/wrapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/wrapping/wrapping.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Dockerfile" />
         <option value="HTML File" />
       </list>
     </option>
@@ -124,7 +127,11 @@
       <workItem from="1694882454237" duration="2756000" />
       <workItem from="1694939803018" duration="1256000" />
       <workItem from="1694945693749" duration="2335000" />
-      <workItem from="1694958074093" duration="2045000" />
+      <workItem from="1694958074093" duration="3984000" />
+      <workItem from="1694966426466" duration="2869000" />
+      <workItem from="1695011525321" duration="1742000" />
+      <workItem from="1695014137324" duration="1159000" />
+      <workItem from="1695268958066" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="Learning the Emscripten compilation.">
       <option name="closed" value="true" />
@@ -158,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694945930210</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Memory allocation and handling.">
+      <option name="closed" value="true" />
+      <created>1694960292070</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694960292070</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +195,7 @@
     <MESSAGE value="Learning the Emscripten compilation." />
     <MESSAGE value="Implemented CCALL and CWRAP." />
     <MESSAGE value="Learning the concept of streaming." />
-    <option name="LAST_COMMIT_MESSAGE" value="Learning the concept of streaming." />
+    <MESSAGE value="Memory allocation and handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Memory allocation and handling." />
   </component>
 </project>
