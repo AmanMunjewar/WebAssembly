@@ -6,6 +6,34 @@
 </head>
 <body>
 <script src="timer.js"></script>
+<script>
+	function run_count() {
+		const startTime = performance.now();
+		my_function();
+		const endTime = performance.now();
+		
+		const timeSpent = (endTime - startTime)/1000;
+		
+		console.log(`Time spent JS: ${timeSpent} seconds`);
+	}
+	function my_function() {
+		let j;
+		for (let i=0; i<983647; i++){
+			j = i/2;
+		}
+	}
+	
+	const count = Module.cwrap(
+			"count",
+			null,
+			null
+	)
+	function run_c(){
+		count();
+	}
+</script>
 <h1>HELLO WORLD</h1>
+<button onclick="run_count()">JS counter</button>
+<button onclick="run_c()">C counter</button>
 </body>
 </html>

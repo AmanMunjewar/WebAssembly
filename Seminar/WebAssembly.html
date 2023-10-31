@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebAssembly</title>
+	<link rel="stylesheet" href="Stylesheet/WebAssembly.css">
+	<link rel="stylesheet" href="Stylesheet/calculator.css">
+	<link rel="stylesheet" href="Stylesheet/collatz.css">
+	<script src="WebAssembly.js"></script>
+</head>
+<body>
+<header>
+	<h1>WebAssembly</h1>
+</header>
+<main>
+	<script>
+	
+	</script>
+	<section>
+		<h2>About WebAssembly</h2>
+		<p>
+			WebAssembly is a new type of code that can be run in modern web browsers — it is a low-level assembly-like
+			language with a compact binary format that runs with near-native performance and provides languages such as C/C++,
+			C# and Rust with a compilation target so that they can run on the web.
+			It is also designed to run alongside JavaScript, allowing both to work together.
+		</p>
+	</section>
+	<section>
+		<h2>Use cases for WebAssembly</h2>
+			WebAssembly finds its foothold in a myriad of applications:
+			<ol>
+				<li>
+					Game Development: Imagine crafting a game in specialized languages designed for gaming. Compile this code into WebAssembly, then access it via a JavaScript bridge. This approach delivers faster, more responsive games directly in the browser.
+				</li>
+				<li>
+					Multimedia Processing: Complex multimedia tasks like video editing, image manipulation, and audio processing become more efficient and streamlined through WebAssembly, enriching user experiences.
+				</li>
+			</ol>
+	</section>
+	<section>
+		<h2>Steps for integrating Webassembly.</h2>
+		<ol>
+			<li>We employ a JavaScript wrapper provided by the WebAssembly compiler.</li>
+			<li>This wrapper facilitates communication between JavaScript and the compiled WebAssembly code.</li>
+			<li>By attaching this JavaScript file to our HTML, we seamlessly integrate WebAssembly-powered features into our web app.</li>
+		</ol>
+	</section>
+	<section>
+		<h2>Getting started with WebAssembly</h2>
+		<p>To get started with WebAssembly, you can visit the
+			<a href="https://developer.mozilla.org/en-US/docs/WebAssembly">WebAssembly </a>
+			website. There you will find documentation, tutorials, and examples.
+		</p>
+	</section>
+	<section class="demonstration">
+		<h2>Demonstration</h2>
+		<h3>Calculator</h3>
+		<p>A simple functioning calculator made using WebAssembly.</p>
+		<fieldset class="calculator">
+			<legend>Calculator</legend>
+			<div>
+				<label for="a">FIRST NUMBER</label>
+				<input type="number" id="a">
+			</div>
+			<div>
+				<label for="b">SECOND NUMBER</label>
+				<input type="number" id="b">
+			</div>
+			<div class="buttons">
+				<button onclick="add()">Addition</button>
+				<button onclick="sub()">Subtract</button>
+				<button onclick="mul()">Multiply</button>
+				<button onclick="div()">Divide</button>
+			</div>
+			<div>
+				<label for="b">Result:</label>
+				<p id="ret"></p>
+			</div>
+		</fieldset>
+		<h3>Collatz Conjecture</h3>
+		<ol>
+			<li>Start with any natural number N.</li>
+			<li>Applying the logic in Collatz Conjecture.</li>
+			<li>After some limited number of iterations the sequence would inevitably fall into [4, 2, 1].</li>
+		</ol>
+		<fieldset class="collatz-conjecture">
+			<legend>Collatz Conjecture</legend>
+			<div class="input-group">
+				<label for="c_num">Enter a number: </label>
+				<input type="number" id="c_num">
+			</div>
+			<div class="actions">
+				<button onclick="collataz()">Compute</button>
+			</div>
+			<div class="result">
+				<p id="sub"></p>
+			</div>
+		</fieldset>
+		<h3>Evaluator</h3>
+		<ol>
+			<li>A program which evaluates a simple mathematical expression</li>
+			<li>You can enter a expression containing multiple operations</li>
+		</ol>
+		<fieldset class="collatz-conjecture">
+			<legend>Evaluator</legend>
+			<div class="input-group">
+				<label for="eval_num">Enter a expression: </label>
+				<input type="text" id="eval_num">
+			</div>
+			<div class="actions">
+				<button onclick="run_eval()">Evaluate</button>
+			</div>
+			<div class="result">
+				<p id="eval_out"></p>
+			</div>
+		</fieldset>
+	</section>
+</main>
+</body>
+</html>

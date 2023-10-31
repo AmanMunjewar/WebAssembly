@@ -1,0 +1,51 @@
+.calculator {
+    width: 40%;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.calculator fieldset {
+    border: none;
+}
+
+.calculator legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.calculator label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.calculator input {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.calculator .buttons {
+    text-align: left;
+}
+
+.calculator button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculator .buttons button:hover {
+    background-color: #555;
+}
+
+.calculator #ret {
+    font-size: 1.2em;
+    font-weight: bold;
+}

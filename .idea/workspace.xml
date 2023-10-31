@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Memory allocation and handling.">
-      <change afterPath="$PROJECT_DIR$/comparison/JS/JS_comp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/malloc/malloc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/malloc/malloc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/malloc/malloc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/malloc/malloc.wasm" afterDir="false" />
+    <list default="true" id="45142dfb-908d-46e6-882e-ffeec5b5128b" name="Changes" comment="Comparison of JS with c.">
+      <change afterPath="$PROJECT_DIR$/Seminar.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/Calculator.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/Stylesheet/WebAssembly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/Stylesheet/calculator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/Stylesheet/collatz.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/WebAssembly.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/WebAssembly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/WebAssembly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/streaming.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seminar/streaming.wasm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/export/export.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison/WebAssembly/timer.c" beforeDir="false" afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison/WebAssembly/timer.html" beforeDir="false" afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison/WebAssembly/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison/WebAssembly/timer.wasm" beforeDir="false" afterPath="$PROJECT_DIR$/comparison/WebAssembly/timer.wasm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +30,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Dockerfile" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -79,20 +85,24 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/web/WebAssembly&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web/WebAssembly/Seminar&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web\WebAssembly\Seminar" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\WebAssembly\Seminar\Stylesheet" />
       <recent name="D:\web\WebAssembly\hello" />
     </key>
   </component>
@@ -132,6 +142,17 @@
       <workItem from="1695011525321" duration="1742000" />
       <workItem from="1695014137324" duration="1159000" />
       <workItem from="1695268958066" duration="743000" />
+      <workItem from="1695487912085" duration="3249000" />
+      <workItem from="1697623628592" duration="9458000" />
+      <workItem from="1697718026188" duration="445000" />
+      <workItem from="1697774314024" duration="42000" />
+      <workItem from="1697774414751" duration="368000" />
+      <workItem from="1697780785245" duration="513000" />
+      <workItem from="1697781972230" duration="1057000" />
+      <workItem from="1697784599350" duration="223000" />
+      <workItem from="1697791809012" duration="1468000" />
+      <workItem from="1697996170257" duration="3000" />
+      <workItem from="1698164399872" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="Learning the Emscripten compilation.">
       <option name="closed" value="true" />
@@ -173,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694960292070</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Comparison of JS with c.">
+      <option name="closed" value="true" />
+      <created>1695488006342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695488006342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +225,7 @@
     <MESSAGE value="Implemented CCALL and CWRAP." />
     <MESSAGE value="Learning the concept of streaming." />
     <MESSAGE value="Memory allocation and handling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Memory allocation and handling." />
+    <MESSAGE value="Comparison of JS with c." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comparison of JS with c." />
   </component>
 </project>
